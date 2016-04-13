@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 100%
+}
+ul {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <ul id="scene">
+    <li class="layer" data-depth="0.00"><img src="images/sky.png"></li>
+    <li class="layer" data-depth="0.50"><img src="images/godzilla.png"></li>
+    <li class="layer" data-depth="1.00"><img src="images/austin.png"></li>
+  </ul>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+  <script>
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+  </script>
+</body>
+</html>
